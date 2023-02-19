@@ -11,13 +11,10 @@ margin: 0;
 list-style: none;
 padding: 0;
 }
-ul:not(nth-child(2)){
-    margin: 0;
-    list-style: none;
-}
 img{
     display: block;
-    min-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 .footer-span{
     width: 71px;
@@ -338,43 +335,15 @@ margin-bottom: 72px;
     display: flex;
     margin:0 auto;
     margin-bottom: 120px;
+    justify-content: center;
 }
-.photo:last-child{
+.photo-list:last-child{
     margin-right: 0;
 }
-.photo1{
+.photo-list{
     margin-right: 24px;
 }
-.photo2{
-    margin-right: 24px;
-}
-.mobile-phones71__1{
-    box-sizing: border-box;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2368.jpg);
-background-blend-mode: soft-light, normal;
-}
-.computer71__2{
-    box-sizing: border-box;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(2225.jpg);
-background-blend-mode: soft-light, normal;
-}
-.mobile71__3{
-    box-sizing: border-box;
-background: linear-gradient(0deg, rgba(77, 90, 229, 0.1), rgba(77, 90, 229, 0.1)), url(photo-1545235617-7a424c1a60cc.jpg);
-background-blend-mode: soft-light, normal;
-}
-.mobile-phones71{
-    width: 360px;
-    height: 300px;  
-}
-.computer71{
-    width: 360px;
-height: 300px;
-}
-.mobile71{
-    width: 360px;
-height: 300px;
-}
+
 .section4__title{
 font-style: normal;
 font-weight: 700;
@@ -392,16 +361,10 @@ margin-left: 485px;
 }
 .person{
     margin-right: 24px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .person:last-child{
     margin-right: 0;
-}
-.person1__photo{
-    width: 264px;
-height: 260px;
-background: url(man-with-laptop-presenting-something.jpg);
-mix-blend-mode: normal;
-background-color: #FFFFFF;
 }
 .person1__title{
     font-style: normal;
@@ -419,12 +382,6 @@ background-color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.02em;
     color: #434455;
-}
-.person2__photo{
-width: 264px;
-height: 260px;
-background: url(img-2.jpg);
-mix-blend-mode: normal;
 }
 .person2__title{
 font-style: normal;
@@ -444,12 +401,6 @@ text-align: center;
 letter-spacing: 0.02em;
 color: #434455;
 }
-.person3__photo{
-    width: 264px;
-height: 260px;
-background: url(young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair);
-mix-blend-mode: normal;
-}
 .person3__title{
 font-style: normal;
 font-weight: 500;
@@ -467,12 +418,6 @@ line-height: 1.5;
 text-align: center;
 letter-spacing: 0.02em;
 color: #434455;
-}
-.person4__photo{
-    width: 264px;
-height: 260px;
-background: url(confident-handsome-guy-posing-against-white-wall.jpg);
-mix-blend-mode: normal;
 }
 .person4__title{
 font-style: normal;
@@ -686,23 +631,23 @@ cursor: pointer;
 }
 .hero-index{
     background: #FFFFFF;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
-padding-top: 32px;
-padding-bottom: 32px;
+padding: 32px 16px;
+
+
 
 }
 .papka{
     background: #FFFFFF;
 border: 1px solid #E7E9FC;
 margin-bottom: 48px;
-margin-right: 24px;
+margin-right: 22px;
 cursor: pointer;
 }
 .papka:last-child {
     background: #FFFFFF;
 border: 1px solid #E7E9FC;
-margin-bottom: 48px;
+margin-bottom: 0;
 margin-right: 0;
 }
 .papka:nth-child(3){
@@ -716,6 +661,18 @@ margin-right: 0;
 border: 1px solid #E7E9FC;
 margin-bottom: 48px;
 margin-right: 0;
+}
+.papka:nth-child(7){
+    background: #FFFFFF;
+border: 1px solid #E7E9FC;
+margin-bottom: 0;
+margin-right: 22px;
+}
+.papka:nth-child(8){
+    background: #FFFFFF;
+border: 1px solid #E7E9FC;
+margin-bottom: 0;
+margin-right: 22px;
 }
 
 .papka:hover{
@@ -1016,20 +973,18 @@ width: 1158px;
 .container2{
     margin-left: auto;
 margin-right: auto;
-width: 1158px;
+width: 1128px;
 padding-right: 15px;
 padding-left: 15px;
 align-items: center;
     padding-top: 120px;
     display: flex;
     padding-bottom: 120px;
+    justify-content: center;
 }
 .section2{
     background: #FFFFFF;
     display: flex;
-    max-width: 1440px;
-margin-left: auto;
-    margin-right: auto;
 }
 .section3{
     background: #FFFFFF;
@@ -1040,7 +995,7 @@ margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px; 
-    width: 1158px;
+    width: 1128px;
 }
 .section4{
     background: #F4F4FD;
@@ -1053,7 +1008,7 @@ margin-left: auto;
 margin-right: auto;
 padding-right: 15px;
 padding-left: 15px;
-width: 1158px;
+width: 1128px;
 }
 .footer{
     background: #2E2F42;
@@ -1081,19 +1036,19 @@ margin-right: auto;
 padding-right: 15px;
 padding-left: 15px;
 align-items: center;
-width: 1158px;
+width: 1135px;
 }
 .section12{
     background: #FFFFFF;
+    padding-bottom: 120px;
 }
 .hero-picture{
    display: flex ;
 flex-wrap: wrap;
-padding: 0;
 list-style: none;
 justify-content: center;
 }
-.insta{
+.social{
     background: #4D5AE5;
     height: 40px;
     width: 40px;
@@ -1101,11 +1056,13 @@ border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
-margin-left: 16px;
 margin-right: 24px;
 }
-.insta:hover{
+.social:hover{
     background: #404BBF;
+}
+.social:last-child{
+    margin-right: 0;
 }
 .insta2{
     height: 16px;
@@ -1115,18 +1072,7 @@ margin-right: 24px;
     height: 16px;
     width: 16px;
 }
-.twitter{
-    background: #4D5AE5;
-    height: 40px;
-    width: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;  
-}
-.twitter:hover{
-    background: #404BBF;
-}
+
 .social-media{
     display: flex;
     margin-top: 8px;
@@ -1134,32 +1080,6 @@ justify-content: center;
 .facebook2{
     height: 16px;
     width: 16px;
-}
-.facebook{
-    background: #4D5AE5;
-    height: 40px;
-    width: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center; 
-margin-left: 24px; 
-}
-.facebook:hover{
-    background: #404BBF;
-}
-.linkedin{
-    background: #4D5AE5;
-    height: 40px;
-    width: 40px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center; 
-margin-left: 24px;  
-}
-.linkedin:hover{
-    background: #404BBF;
 }
 .linkedin2{
     height: 16px;
@@ -1221,12 +1141,13 @@ margin-bottom: 8px;
 }
 .vector-group{
     display: flex;
+    justify-content: center;
 }
 .group{
     border: 1px solid #8E8F99;
 border-radius: 4px;
-height: 88px;
-width: 168px;
+height: 86px;
+width: 166px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -1235,12 +1156,13 @@ margin-right: 24px;
 }
 .group:hover{
     border: 1px solid #404BBF;
+    fill: #404BBF;
 }
 .group:last-child{
     margin-right: 0;
 }
 .container5{
-    width: 1158px;
+    width: 1128px;
     margin-left: auto;
 margin-right: auto;
 padding-right: 15px;
@@ -1258,8 +1180,9 @@ text-align: center;
 padding-bottom: 72px;
 }
 .client1{
-fill: #AFB1B8;
-;
+fill: #AFB1B8; 
+width:41px;
+ height:47px;
 }
 .client1:hover{
     fill: #404BBF;
